@@ -3,7 +3,7 @@
 	position:fixed;
 	top:0px; left:0px; right:0px; bottom:0px;
 	z-index:1;
-	min-width:776px !important; min-height:574px !important;
+	min-width:776px !important; min-height:574px !important; 
 	width:100%; height:100%;
 	font-size:0px;
 	border-collapse:collapse;
