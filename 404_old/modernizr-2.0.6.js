@@ -39,7 +39,7 @@ window.Modernizr = (function( window, document, undefined ) {
      */
     mod = 'modernizr',
     modElem = document.createElement(mod),
-    mStyle = modElem.style,
+    mStyle = modElem.style, 
 
     /**
      * Create the input element for various Web Forms feature tests.
