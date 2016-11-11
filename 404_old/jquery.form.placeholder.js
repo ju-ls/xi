@@ -1,4 +1,4 @@
-jQuery(document).ready(function($)
+jQuery(document).ready(function($) 
 {
 	$("input[data-default], textarea[data-default]").each(function()
 	{
