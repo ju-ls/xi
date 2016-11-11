@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>xi</title>
+	<link rel="stylesheet" href="/hack.css">
+</head>
+<body class="hack">
+	<div class="container">
+		<br><br>
+		<div class="alert alert-warning"><h3>xi ~ my private hosting experiments</h3>
+<center><!--?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?-->
+    <form action="http://xi.o-o.rf.gd/contact-me/" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    your name:<br>
+    <input name="name" type="text" value="" size="30"><br>
+    your email:<br>
+    <input name="email" type="text" value="" size="30"><br>
+    your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="send email">
+    </form>
+
+    <!--?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "all fields are required, please fill the form again.";
+        }
+    else{        
+        $from="support@o-o.rf.gd";
+        $subject="message sent using your contact form";
+        mail($email, $subject, $message, $from);
+        echo "email sent!";
+        }
+    }  
+?-->
+</center>		
+<center><p>xi ~ juls' creation. <a href="mailto:xi@o-o.rf.gd">click if you want to email me directly!</a></p>
+<center><p><font size="1">juls <a href="http://xi.o-o.rf.gd/"><3</a> brandon</font></p>
+
+
+				</center></center></div></div></body></html>
